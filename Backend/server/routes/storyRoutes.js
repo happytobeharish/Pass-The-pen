@@ -1,16 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const Story = require("../models/Story");
+const storyController = require("../controllers/storyController");
 
-router.get("/", async (req, res) => {
-  const stories = await Story.find().sort({ createdAt: -1 });
-  res.json(stories);
-});
-
-router.post("/", async (req, res) => {
-  const { title, genre } = req.body;
-  const newStory = await Story.create({ title, genre, parts: [] });
-  res.status(201).json(newStory);
-});
+router.post("/", storyController.createStory);
+router.post("/:storyId/contribute", storyController.contributeToStory);
+router.get("/:id", storyController.getStoryById);
+router.post("/:storyId/vote", storyController.voteOnStory);
+router.get("/", storyController.searchStories);
 
 module.exports = router;
