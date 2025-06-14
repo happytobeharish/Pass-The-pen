@@ -11,7 +11,7 @@ export default function CreateStoryForm({ onStoryCreated }) {
     const newStory = await createStory({ title, genre, prompt });
     onStoryCreated(newStory);
     setTitle("");
-    setGenre("");
+    setGenre(""); 
     setPrompt("");
   }
 

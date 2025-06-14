@@ -9,7 +9,7 @@ export default function LoginSignup() {
   const { login: doLogin } = useAuth();
 
   async function handleSubmit(e) {
-    e.preventDefault();
+    e.preventDefault(); 
     const payload = { username, password };
     const data = isLogin ? await login(payload) : await signup(payload);
     doLogin(data);

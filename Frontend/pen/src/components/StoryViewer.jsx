@@ -16,7 +16,7 @@ export default function StoryViewer({ storyId }) {
   async function handleContribute() {
     const newStory = await contributeToStory(storyId, {
       text: contribution,
-      author: "Anonymous",
+      author: "Anonymous", 
     });
     setStory(newStory);
     setContribution("");

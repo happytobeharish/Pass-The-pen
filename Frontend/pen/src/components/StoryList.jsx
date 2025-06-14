@@ -13,7 +13,7 @@ export default function StoryList({ onSelectStory }) {
     loadStories();
   }, [filters]);
 
-  return (
+  return ( 
     <div className="max-w-3xl mx-auto p-4">
       <h2 className="text-xl font-bold mb-4">Browse Stories</h2>
       <div className="flex gap-2 mb-4">

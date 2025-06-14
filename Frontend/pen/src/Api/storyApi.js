@@ -11,7 +11,7 @@ export const contributeToStory = async (storyId, payload) => {
   const response = await axios.post(`${BASE_URL}/${storyId}/contribute`, payload);
   return response.data;
 };
-
+ 
 export const getStoryById = async (id) => {
   const response = await axios.get(`${BASE_URL}/${id}`);
   return response.data;
