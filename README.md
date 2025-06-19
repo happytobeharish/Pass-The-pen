@@ -12,7 +12,7 @@
 - 🔒 User authentication (JWT-based)
 - 📈 Vote on your favorite stories
 - 🎭 Filter stories by genre or creator
-- 👤 View your own story contributions
+- 👤 View your own story contributions 
 
 --- 
 
