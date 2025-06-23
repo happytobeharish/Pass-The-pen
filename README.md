@@ -7,7 +7,7 @@
 ## 🚀 Features
 
 - 🧠 Create & contribute to stories
-- ✍️ Add paragraphs to ongoing stories
+- ✍️ Add paragraphs to ongoing stories 
 - 📚 Explore finished stories
 - 🔒 User authentication (JWT-based)
 - 📈 Vote on your favorite stories
